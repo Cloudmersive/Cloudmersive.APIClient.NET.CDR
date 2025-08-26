@@ -16,10 +16,10 @@ Invoke-WebRequest -Uri 'https://api.cloudmersive.com/cdr/docs/v1/swagger' -OutFi
 
 
 
-$csprojpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.DocumentAndDataConvert/Cloudmersive.APIClient.NET.DocumentAndDataConvert.csproj
-$csprojtestpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.DocumentAndDataConvert.Test/Cloudmersive.APIClient.NET.DocumentAndDataConvert.Test.csproj
-$nuspecpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.DocumentAndDataConvert/Cloudmersive.APIClient.NET.DocumentAndDataConvert.nuspec
-$slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.DocumentAndDataConvert.sln
+$csprojpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.CDR/Cloudmersive.APIClient.NET.CDR.csproj
+$csprojtestpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.CDR.Test/Cloudmersive.APIClient.NET.CDR.Test.csproj
+$nuspecpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.CDR/Cloudmersive.APIClient.NET.CDR.nuspec
+$slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.CDR.sln
 
 
 (Get-Content $nuspecpath).replace('<title>Swagger Library</title>', "<title>Cloudmersive Convert API Client</title>") | Set-Content $nuspecpath
@@ -27,7 +27,7 @@ $slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.DocumentAndDataConve
 (Get-Content $nuspecpath).replace('<owners>$author$</owners>', "<owners>Cloudmersive</owners>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<description>A library generated from a Swagger doc</description>', "<description>Convert files and data effortlessly. Convert DOCX to PDF. Convert CSV to JSON. And much more.</description>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<!-- Authors contain text that appears directly on the gallery -->', "<iconUrl>https://cloudmersive.com/images/cmsdk.png</iconUrl>") | Set-Content $nuspecpath
-(Get-Content $nuspecpath).replace('<dependencies>', "<projectUrl>https://cloudmersive.com/convert-api</projectUrl><dependencies>") | Set-Content $nuspecpath
+(Get-Content $nuspecpath).replace('<dependencies>', "<projectUrl>https://cloudmersive.com/cdr-api</projectUrl><dependencies>") | Set-Content $nuspecpath
 
 
 
