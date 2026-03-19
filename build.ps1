@@ -78,7 +78,7 @@ $slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.CDR.sln
 
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe $slnpath /t:rebuild 
 
-& C:\CodeSigning\sign.ps1 ./client/src/Cloudmersive.ApiClient.NET.DocumentAndDataConvert/bin/Debug/Cloudmersive.APIClient.NET.DocumentAndDataConvert.dll
+# & C:\CodeSigning\sign.ps1 ./client/src/Cloudmersive.ApiClient.NET.DocumentAndDataConvert/bin/Debug/Cloudmersive.APIClient.NET.DocumentAndDataConvert.dll
 
 ./nuget.exe pack $csprojpath
 

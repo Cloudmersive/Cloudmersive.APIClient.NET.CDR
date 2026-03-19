@@ -77,6 +77,30 @@ namespace Cloudmersive.APIClient.NET.CDR.Test
         }
         
         /// <summary>
+        /// Test FileAdvanced
+        /// </summary>
+        [Test]
+        public void FileAdvancedTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //bool? allowExecutables = null;
+            //bool? allowInvalidFiles = null;
+            //bool? allowScripts = null;
+            //bool? allowPasswordProtectedFiles = null;
+            //bool? allowMacros = null;
+            //bool? allowXmlExternalEntities = null;
+            //bool? allowInsecureDeserialization = null;
+            //bool? allowHtml = null;
+            //bool? allowUnsafeArchives = null;
+            //bool? allowOleEmbeddedObject = null;
+            //bool? allowUnwantedAction = null;
+            //string restrictFileTypes = null;
+            //System.IO.Stream inputFile = null;
+            //var response = instance.FileAdvanced(allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, allowUnsafeArchives, allowOleEmbeddedObject, allowUnwantedAction, restrictFileTypes, inputFile);
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
         /// Test FileToPdf
         /// </summary>
         [Test]
@@ -85,6 +109,30 @@ namespace Cloudmersive.APIClient.NET.CDR.Test
             // TODO uncomment below to test the method and replace null with proper value
             //System.IO.Stream inputFile = null;
             //var response = instance.FileToPdf(inputFile);
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
+        /// Test FileToPdfAdvanced
+        /// </summary>
+        [Test]
+        public void FileToPdfAdvancedTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //bool? allowExecutables = null;
+            //bool? allowInvalidFiles = null;
+            //bool? allowScripts = null;
+            //bool? allowPasswordProtectedFiles = null;
+            //bool? allowMacros = null;
+            //bool? allowXmlExternalEntities = null;
+            //bool? allowInsecureDeserialization = null;
+            //bool? allowHtml = null;
+            //bool? allowUnsafeArchives = null;
+            //bool? allowOleEmbeddedObject = null;
+            //bool? allowUnwantedAction = null;
+            //string restrictFileTypes = null;
+            //System.IO.Stream inputFile = null;
+            //var response = instance.FileToPdfAdvanced(allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, allowUnsafeArchives, allowOleEmbeddedObject, allowUnwantedAction, restrictFileTypes, inputFile);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
